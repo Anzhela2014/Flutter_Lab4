@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mimik/styled_text.dart';
+
 
 class GradientContainer extends StatelessWidget {
   @override
@@ -16,13 +18,7 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
       child: Center(
-        child: Text(
-          "Hello world!",
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 32,
-          ),
-        ),
+        child: StyledText()
       ),
     );
   }
