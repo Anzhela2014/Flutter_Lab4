@@ -1,33 +1,33 @@
 import 'package:flutter/material.dart';
+
 void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
+      home: (Scaffold(
         body: Container(
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Colors.white,
-                Colors.blue,
-                Colors.red,
+                Colors.amberAccent,
+                Colors.black,
+                Colors.redAccent,
               ],
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
             ),
-          ), // <-- Здесь закрывается BoxDecoration
-          child: const Center(
+          ),
+          child: Center(
             child: Text(
               "Hello world!",
               style: TextStyle(
-                color: Colors.white, // <-- color вместо colors
+                color: Colors.white,
                 fontSize: 32,
               ),
-            ), // <-- Стили текста должны быть внутри самого виджета Text
+            ),
           ),
         ),
-      ),
+      )),
     ),
   );
 }
-
