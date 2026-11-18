@@ -3,14 +3,15 @@ import 'package:mimik/gradient_container.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: (Scaffold(
-        body: GradientContainer(),
-      )),
+      home: Scaffold(
+        body: GradientContainer(
+          Colors.amberAccent,
+          Colors.black,
+          Colors.redAccent,
+        ),
+      ),
     ),
   );
 }
-
-
-
